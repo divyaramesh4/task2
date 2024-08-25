@@ -1,0 +1,146 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Player Container */
+.player-container {
+    background: #1f1f1f;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Search Bar */
+.search-bar input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar input::placeholder {
+    color: #bbb;
+}
+
+/* Playlist */
+.playlist {
+    margin-bottom: 25px;
+}
+
+.playlist h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.playlist ul {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.playlist li {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #444;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playlist li:hover {
+    background-color: #555;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.control-btn:hover {
+    transform: scale(1.2);
+    color: #1db954;
+}
+
+/* Volume Control */
+#volume {
+    width: 150px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    appearance: none;
+}
+
+#volume::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #1db954;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#volume::-webkit-slider-thumb:hover {
+    background: #1ed760;
+}
+
+#volume::-webkit-slider-runnable-track {
+    background-color: #555;
+    height: 5px;
+    border-radius: 10px;
+}
+
+/* Scrollbar Styling */
+.playlist ul::-webkit-scrollbar {
+    width: 5px;
+}
+
+.playlist ul::-webkit-scrollbar-thumb {
+    background-color: #1db954;
+    border-radius: 5px;
+}
